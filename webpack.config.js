@@ -1,5 +1,7 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 const config = {
-  entry: ['src/app.js'],
+  entry: [`${__dirname}/src/app.js`],
   output: {
     filename: '[name].[hash].js',
     path: 'dist',
