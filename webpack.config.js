@@ -19,7 +19,14 @@ const config = {
     })
   ],
   module: {
-    loaders: []
+    loaders: [{
+      test: /\.(js|jsx)$/,
+      exclue: /node_modules/,
+      loader: 'babel',
+      query: {
+        cacheDirectory: true
+      }
+    }]
   }
 };
 
