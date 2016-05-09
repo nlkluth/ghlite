@@ -25,11 +25,5 @@
     "type": "git",
     "url": "git+https://github.com/nlkluth/ghlite.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/nlkluth/ghlite/issues"
-  },
   "homepage": "https://github.com/nlkluth/ghlite#readme"
 }
