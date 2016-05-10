@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import LoginContainer from './components/login/LoginContainer';
+import CoreLayout from './components/layout/CoreLayout';
 
 const target = document.getElementById('root');
-ReactDOM.render(<LoginContainer />, target);
+ReactDOM.render(<CoreLayout />, target);
