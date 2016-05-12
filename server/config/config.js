@@ -1,5 +1,4 @@
-const config = () => {
+exports.config = () => {
 
 };
 
-export default config;

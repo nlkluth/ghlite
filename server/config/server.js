@@ -1,7 +1,5 @@
-import routes from '../routes';
+const routes = require('../routes');
 
-export const setupServer = (config, server) => {
+exports.setupServer = (config, server) => {
   routes(server);
 };
-
-export default setupServer;

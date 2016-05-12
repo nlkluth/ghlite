@@ -1,6 +1,6 @@
-import Hapi from 'hapi';
-import config from './server/config/config';
-import setupServer from './server/config/server';
+const Hapi = require('hapi');
+const config = require('./server/config/config');
+const setupServer = require('./server/config/server').setupServer;
 
 const port = process.env.PORT || 8000;
 const server = new Hapi.Server();

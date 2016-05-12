@@ -1,5 +1,5 @@
-import user from './routes/user'
+const user = require('./routes/user');
 
-export default (server) => {
+module.exports = (server) => {
   user(server);
-}
+};

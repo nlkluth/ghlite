@@ -4,7 +4,7 @@ internals.getUser = (request, reply) => {
   reply('Ok');
 };
 
-export default (server) => {
+module.exports = (server) => {
   server.route({
     method: 'GET',
     path: '/api/user',
@@ -12,4 +12,4 @@ export default (server) => {
       handler: internals.getUser
     }
   });
-}
+};
