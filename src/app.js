@@ -1,6 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import CoreLayout from './components/layout/CoreLayout';
+import React, { Component } from 'react';
+import { gql, graphql } from 'react-apollo';
+import logo from './logo.svg';
+import './App.css';
 
-const target = document.getElementById('root');
-ReactDOM.render(<CoreLayout />, target);
+class App extends Component {
+  render() {
+    console.log(this.props.data.error);
+    return (
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h1 className="App-title">Welcome to React</h1>
+        </header>
+        <p className="App-intro">
+          To get started, edit <code>src/App.js</code> and save to reload.
+        </p>
+      </div>
+    );
+  }
+}
+
+const TestQuery = gql`query { todos { text } }`;
+
+export default graphql(TestQuery)(App);
