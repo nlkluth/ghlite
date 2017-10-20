@@ -15,11 +15,6 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        {process.env.NODE_ENV === 'development' && (
-          <Link to="graphql">
-            Go to GraphIql
-          </Link>
-        )}
       </div>
     );
   }

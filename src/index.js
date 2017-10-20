@@ -8,7 +8,6 @@ import {
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './index.css';
 import App from './App';
-import GraphIql from './GraphIql';
 import registerServiceWorker from './registerServiceWorker';
 
 const authorizationKey = process.env.REACT_APP_GITHUB_GRAPHQL_KEY;
@@ -32,7 +31,6 @@ const client = new ApolloClient({ networkInterface });
 const Routes = () => (
   <Switch>
     <Route path="/" exact component={App} />
-    <Route path="/graphql" component={GraphIql} />
   </Switch>
 );
 
