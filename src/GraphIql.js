@@ -15,7 +15,7 @@ function graphQLFetcher(graphQLParams) {
 }
 
 const GraphIql = () => (
-  <GraphiQL fetcher={graphQLFetcher} editorTheme="solarized light" />
+  <GraphiQL fetcher={graphQLFetcher} />
 );
 
 export default GraphIql
