@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import GraphiQL from 'graphiql';
+import 'graphiql/graphiql.css';
+import './graphiql.css';
 
 function graphQLFetcher(graphQLParams) {
   return fetch('https://api.github.com/graphql', {
@@ -12,19 +14,8 @@ function graphQLFetcher(graphQLParams) {
   }).then(response => response.json());
 }
 
-class GraphIql extends Component {
-  constructor(props) {
-    super(props);
-    const style = document.createElement('style');
-    style.setAttribute('href', '//cdn.jsdelivr.net/graphiql/0.8.1/graphiql.css')
-    document.head.appendChild(style);
-  }
-
-  render() {
-    return (
-      <GraphiQL fetcher={graphQLFetcher} editorTheme="solarized light" />
-    );
-  }
-}
+const GraphIql = () => (
+  <GraphiQL fetcher={graphQLFetcher} editorTheme="solarized light" />
+);
 
 export default GraphIql
